@@ -6,9 +6,15 @@ Classifies images as **sharp** or **blurry** — useful for automatically cleani
 
 ## Model
 - Architecture: MobileNetV2 (Transfer Learning)
-- Dataset: Custom dataset of sharp and blurry images
+- Dataset: Blur Dataset (Kaggle) — 350 sharp, 350 defocused-blur, and 350 motion-blur images. Defocused-     blur and motion-blur were merged into a single "blurry" class, producing a binary dataset of 350 sharp     and 700 blurry images (1,050 total)
 - Accuracy: **91.43%**
 - Tested on real phone photos
+
+## Additional Experiments
+See `finetuning_experiments.ipynb` for a comparison of feature extraction 
+vs. fine-tuning strategies on this dataset. Fine-tuning was found to 
+underperform feature extraction due to the small dataset size — 
+see the full report for detailed analysis.
 
 ## Tech Stack
 - Python
