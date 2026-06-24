@@ -29,3 +29,6 @@ see the full report for detailed analysis.
 
 ## Results
 The model successfully distinguishes sharp vs blurry images with 91.43% accuracy on the test set.
+
+##📄 Published report: https://doi.org/10.5281/zenodo.20833021
+
